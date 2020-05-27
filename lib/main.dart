@@ -21,14 +21,14 @@ class _HomeState extends State<Home> {
 
 
   var arreglox = [
-    {"nombre": "Liverpool", "imagen": "messi_liverpool.jpg", "gol": "Golazo en la semifinal de la Champions"},
-    {"nombre": "Athletic Bilbao", "imagen": "messi_athletic.jpg", "gol": "Uno más a la cuenta"},
-    {"nombre": "Atletico de Madrid", "imagen": "messi_atletico.jpg", "gol": "Imposible para Oblack"},
-    {"nombre": "Real Betis", "imagen": "messi_betis.jpg", "gol": "Se abre el manual de tiros libres"},
-    {"nombre": "Celta de Vigo", "imagen": "messi_celta.png", "gol": "Messi responde al gol del Celta con 2 goles de tiro libre"},
-    {"nombre": "Español", "imagen": "messi_español.jpg", "gol": "Golazo en el ángulo"},
-    {"nombre": "PSV", "imagen": "messi_psv.jpg", "gol": "Golazo en la Champions"},
-    {"nombre": "Sevilla", "imagen": "messi_sevilla.jpg", "gol": "Solo les queda mirar"},
+    {"nombre": "Liverpool", "imagen": "messi_liverpool.jpg", "deporte": "Golazo en la semifinal de la Champions"},
+    {"nombre": "Athletic Bilbao", "imagen": "messi_athletic.jpg", "deporte": "Uno más a la cuenta"},
+    {"nombre": "Atletico de Madrid", "imagen": "messi_atletico.jpg", "deporte": "Imposible para Oblack"},
+    {"nombre": "Real Betis", "imagen": "messi_betis.jpg", "deporte": "Se abre el manual de tiros libres"},
+    {"nombre": "Celta de Vigo", "imagen": "messi_celta.png", "deporte": "Messi responde al gol del Celta con 2 goles de tiro libre"},
+    {"nombre": "Español", "imagen": "messi_espanol.jpg", "deporte": "Golazo en el ángulo"},
+    {"nombre": "PSV", "imagen": "messi_psv.jpg", "deporte": "Golazo en la Champions"},
+    {"nombre": "Sevilla", "imagen": "messi_sevilla.jpg", "deporte": "Solo les queda mirar"},
   ];
 
   _listado() async {
@@ -117,7 +117,7 @@ class _HomeState extends State<Home> {
           ),
         ),
         body: new GridView.count(
-          crossAxisCount: 3,
+          crossAxisCount: 2,
           mainAxisSpacing: 0.1,
           childAspectRatio: 0.700,
           children: listamos,
